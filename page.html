@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header row m-0 p-0 shadow">
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark header__navbar">
+      <div class="container-fluid text-white">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">menu</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">menu</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">menu</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">menu</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header__title my-5">
+      <h1 class="site__title display-5 fw-bolder text-center">タイトル</h1>
+      <h2 class="site__subtitle text-center h6">サブタイトル</h2>
+    </div>
+
+    <div class="header__static_page_menu d-flex align-items-end m-0 p-0 w-100">
+      <nav class="container-lg my-0 p-0">
+        <ul class="d-flex list-unstyled my-0">
+          <li class="text-center w-100 p-2"><a href="#" class="text-white text-uppercase fw-bold">Sample1</a></li>
+          <li class="text-center w-100 p-2"><a href="#" class="text-white text-uppercase fw-bold">Sample1</a></li>
+          <li class="text-center w-100 p-2"><a href="#" class="text-white text-uppercase fw-bold">Sample1</a></li>
+          <li class="text-center w-100 p-2"><a href="#" class="text-white text-uppercase fw-bold">Sample1</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main -->
+  <div class="container-lg my-2 my-lg-4 shadow-sm wrapper">
+    <div class="row p-0 p-lg-4">
+
+      <main class="col-lg-8 p-2 px-md-4 main">
+        <div class="row row-cols-1 gy-2 g-md-2 g-lg-4">
+
+          <article class="entry">
+
+            <header class="entry__header">
+              <p class="entry__meta">
+                <span class="p-1 mr-5 entry__categories"><a href="#">カテゴリー</a></span>
+                <time datetime="2022-06-22" class="fw-bold p-1 entry__date">2022-06-22</time>
+                <span class="fw-bold p-1 entry__author">John Doe</span>
+              </p>
+              <h1 class="entry__title fs-2 fw-bold">ページのタイトル</h1>
+              <figure>
+                <picture>
+                  <img src="img/toycar.jpg" class="w-100 h-25" alt="Toy Car">
+                </picture>
+              </figure>
+              <ul class="d-flex list-unstyled my-2 my-lg-4 sns_btn">
+                <li class="border rounded text-center w-100 p-1 mx-1 sns_btn__twitter"><a href="#" class="text-white d-none d-lg-inline flex">Twitter</a></li>
+                <li class="border rounded text-center w-100 p-1 mx-1 sns_btn__facebook"><a href="#" class="text-white d-none d-lg-inline flex">Facebook</a></li>
+                <li class="border rounded text-center w-100 p-1 mx-1 sns_btn__hatena"><a href="#" class="text-white d-none d-lg-inline flex">Hatena</a></li>
+                <li class="border rounded text-center w-100 p-1 mx-1 sns_btn__line"><a href="#" class="text-white d-none d-lg-inline flex">LINE</a></li>
+                <li class="border rounded text-center w-100 p-1 mx-1 sns_btn__pocket"><a href="#" class="text-white d-none d-lg-inline flex">Pocket</a></li>
+              </ul>
+            </header>
+
+            <section class="entry__content">
+              <div id="toc_container" class="no_bullets">
+                <p class="toc_title">もくじ</p>
+                <ul class="toc_list">
+                  <li>
+                    <a href="#i">
+                      <span class="toc_number toc_depth_1">1</span>見出し
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#i-2">
+                      <span class="toc_number toc_depth_1">2</span>見出し弐
+                    </a>
+                    <ul>
+                      <li>
+                        <a href="#i-3">
+                          <span class="toc_number toc_depth_2">2.1</span>見出し参
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#-Blockquote">
+                      <span class="toc_number toc_depth_1">3</span>引用 (Blockquote) テスト
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#i-4">
+                      <span class="toc_number toc_depth_1">4</span>テーブル
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#i-5">
+                      <span class="toc_number toc_depth_1">5</span>非順序リスト (ネスト化)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#i-6">
+                      <span class="toc_number toc_depth_1">6</span>順序リスト (ネスト化)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#HTML">
+                      <span class="toc_number toc_depth_1">7</span>HTML 要素タグテスト
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h2>
+                <span id="i">見出し</span>
+              </h2>
+              <h1>見出し壱</h1>
+              <h2>
+                <span id="i-2">見出し弐</span>
+              </h2>
+              <h3>
+                <span id="i-3">見出し参</span>
+              </h3>
+              <h4>見出し四</h4>
+              <h5>見出し五</h5>
+              <h6>見出し六</h6>
+              <h2>
+                <span id="-Blockquote">引用 (Blockquote) テスト</span>
+              </h2>
+              <p>一行の引用。</p>
+              <blockquote>
+                <p>ハングリーであれ、愚かであれ。</p>
+              </blockquote>
+              <p>
+                <code>cite</code>参照を含む複数行の引用。
+              </p>
+              <blockquote>
+                <p>
+                  これは言語みたいなものだ。アルファベットすなわち音階を学び、文すなわちコードを学ぶ。そしてやがてホーンと即興で会話するようになる。即興で話すのはすばらしいことだと思うが、私には決して会得できないだろう。しかし音楽ともなれば、私は即座によろこんで会話する。そう、それがジャズ音楽のすべてだ。
+                </p>
+                <p>
+                  <cite>スタン・ゲッツ</cite>
+                </p>
+              </blockquote>
+              <h2>
+                <span id="i-4">テーブル</span>
+              </h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>社員</th>
+                    <th>給料</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>
+                      <a href="http://example.org/">山田太郎</a>
+                    </th>
+                    <td>1ドル</td>
+                    <td>スティーブ・ジョブズが必要なサラリーと同じ額。</td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <a href="http://example.org/">田中花子</a>
+                    </th>
+                    <td>1,000万円</td>
+                    <td>ブログを書くために必要になる資金。</td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <a href="http://example.org/">山本次郎</a>
+                    </th>
+                    <td>1億円</td>
+                    <td>百聞は一見にしかず、ということで、カメラマンはブロガーの100倍。</td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <a href="http://example.org/">中山愛子</a>
+                    </th>
+                    <td>10億円</td>
+                    <td>特に理由は要りません。</td>
+                  </tr>
+                </tbody>
+              </table>
+              <dl>
+                <dt>定義リストタイトル</dt>
+                <dd>これは定義リストです。</dd>
+                <dt>定義</dt>
+                <dd>物事、領域、何かについての意味の正確な文章や説明:
+                  <em>詩を構成するものの定義。</em>
+                </dd>
+              </dl>
+              <h2>
+                <span id="i-5">非順序リスト (ネスト化)</span>
+              </h2>
+              <ul>
+                <li>リスト項目 1
+                  <ul>
+                    <li>リスト項目 1
+                      <ul>
+                        <li>リスト項目 1</li>
+                        <li>リスト項目 2</li>
+                        <li>リスト項目 3</li>
+                        <li>リスト項目 4</li>
+                      </ul>
+                    </li>
+                    <li>リスト項目 2</li>
+                    <li>リスト項目 3</li>
+                    <li>リスト項目 4</li>
+                  </ul>
+                </li>
+                <li>リスト項目 2</li>
+                <li>リスト項目 3</li>
+                <li>リスト項目 4</li>
+              </ul>
+              <h2>
+                <span id="i-6">順序リスト (ネスト化)</span>
+              </h2>
+              <ol>
+                <li>リスト項目 1
+                  <ol>
+                    <li>リスト項目 1
+                      <ol>
+                        <li>リスト項目 1</li>
+                        <li>リスト項目 2</li>
+                        <li>リスト項目 3</li>
+                        <li>リスト項目 4</li>
+                      </ol>
+                    </li>
+                    <li>リスト項目 2</li>
+                    <li>リスト項目 3</li>
+                    <li>リスト項目 4</li>
+                  </ol>
+                </li>
+                <li>リスト項目 2</li>
+                <li>リスト項目 3</li>
+                <li>リスト項目 4</li>
+              </ol>
+              <h2>
+                <span id="HTML">HTML 要素タグテスト</span>
+              </h2>
+              <p>他の HTML タグは
+                <a href="http://ja.support.wordpress.com/code/" target="_blank"
+                  rel="nofollow noopener noreferrer">FAQ</a>をご覧ください。
+              </p>
+              <p>
+                <strong>住所タグ</strong>
+              </p>
+              <p>以下は住所の例です。
+                <code>&lt;address&gt;</code>タグを使用しています:
+              </p>
+              <address>〒100-0000東京都千代田区1-1-1日本</address>
+              <p>
+                <strong>Code タグ</strong>
+              </p>
+              <p>
+                <code>&lt;code&gt;</code>タグはこのように使います:
+                <code>word-wrap: break-word;</code>
+              </p>
+              <p>
+                <strong>Delete タグ</strong>
+              </p>
+              <p>
+                <code>&lt;del&gt;</code>タグは
+                <del>打ち消し線</del>などで表現されますが、このタグは HTML5 ではサポートされていません。
+              </p>
+              <p>
+                <strong>Emphasize タグ</strong>
+              </p>
+              <p>
+                <code>&lt;em&gt;</code>タグは
+                <em>文章の強調</em>に使われます。欧文では斜体になっていることがよくあります。
+              </p>
+              <p>
+                <strong>Preformatted タグ</strong>
+              </p>
+              <p>
+                <code>&lt;pre&gt;</code>タグは複数行のコードのスタイリングに使います。
+              </p>
+              <pre>.post-title {
+	margin: 0 0 5px;
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 1.2;
+
+	and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
+
+}</pre>
+              <p>
+                <strong>Strike タグ (
+                  <em>HTML5 では非推奨</em>)
+                </strong>
+              </p>
+              <p>このタグは
+                <span style="text-decoration: line-through;">打ち消し線</span>を表しています。
+              </p>
+              <p>
+                <strong>Strong タグ</strong>
+              </p>
+              <p>このタグは
+                <strong>太字</strong>テキストを表しています。
+              </p>
+              <p>
+                <b>b タグ</b>
+              </p>
+              <p>このタグは
+                <b>太字</b>テキストを表しています。
+              </p>
+              <p>
+                <strong>Subscript タグ</strong>
+              </p>
+              <p>Subscript タグ
+                <code>&lt;sub&gt;</code>を使うと H
+                <sub>2</sub>O のような表示の際に「2」が下付きになります。
+              </p>
+              <p>
+                <strong>Superscript タグ</strong>
+              </p>
+              <p>Superscript タグ
+                <code>&lt;sup&gt;</code>を使うと E = MC
+                <sup>2</sup>のような表示の際に「2」が上付きになります。
+              </p>
+              <h3>
+                <span>デフォルト</span>
+              </h3>
+              <p>
+                これは段落です。特別なテキスト配置処理が付いていない状態になっている必要があります。通常のテキストフローと同じように表示されるべきです。なにも特別なことはありません。ただ、愛とともに自由に流れるテキストだけ。完全に中立的で、どちらかの肩を持つこともなく、かといってどっちつかずの態度というわけでもない。それだけ。それだけです。ここにいることが好きで、片方のサイドを選ぶ必要を感じていない。そんな彼はほっといてあげてください。彼は彼のままで。私を信じて。
+              </p>
+              <h3>
+                <span>左寄せ</span>
+              </h3>
+              <p style="text-align: left;">
+                これは段落です。左寄せになっています。彼の視点はやや左寄りです。好きな色は緑。左寄せな彼はエコフレンドリーになりがちですが、実際にそうだというはっきりした証拠というのはとくにありません。彼は富を共有するのが好きですが、公平な配分については両端揃えの彼にお任せといったところです。
+              </p>
+              <h3>
+                <span>中央寄せ</span>
+              </h3>
+              <p style="text-align: center;">
+                これは段落です。中央寄せになっています。中央に寄っているというのはつまり、どっちつかずということです。意見がコロコロ変わったりします。自分の意見を決めるのに時間がかかります。どちらかのサイドを選びたいと思っているんです。本当に。意図はすばらしいんですが、実際には助けになるというより物事を必要以上に複雑にしてしまったりします。彼の気持ちを振り向かせられれば最高でしょう。中央寄せの彼は賄賂も受け取るらしいですよ。
+              </p>
+              <h3>
+                <span>右寄せ</span>
+              </h3>
+              <p style="text-align: right;">
+                これは段落です。右寄せになっています。彼の視点は右寄りなんです。他の人に何をどんなふうにすべきか指図されるのをいやがります。右派の彼はたくさんの銃を保有していて、狩りに繰り出すのが好きです。いいじゃないですか。球場5つ分くらいの距離からなかなかいい弾を撃つわけです。どんぴしゃに。すごいですよ。
+              </p>
+              <h3>
+                <span>両端揃え</span>
+              </h3>
+              <p style="text-align: justify;">
+                これは段落です。左右両端揃えになっています。英語ではジャスティファイドと呼ばれていますがジャスティン・ティンバーレイクとは関係ありません。普通、両端揃えの彼はかなり厳格です。すべてがあるべき場所にぴったりと収まっていないと気が済まず、他の配置のようにばらばらだったりはしません。だから彼の方がいいなんて言ってるわけではないんですよ。でもまあ確かに、エリート気取りの態度だなって感じることはありますけど。
+              </p>
+
+            </section>
+
+            <footer class="mt-5 text-end entry__footer">
+              <ul class="d-inline-flex list-unstyled">
+                <li class="border rounded p-1 mx-1 entry__categories"><a href="#">カテゴリー</a></li>
+              </ul>
+              <ul class="d-inline-flex list-unstyled">
+                <li class="border rounded p-1 mx-1 entry__tags"><a href="#">タグ</a></li>
+                <li class="border rounded p-1 mx-1 entry__tags"><a href="#">タグ</a></li>
+                <li class="border rounded p-1 mx-1 entry__tags"><a href="#">タグ</a></li>
+                <li class="border rounded p-1 mx-1 entry__tags"><a href="#">タグ</a></li>
+              </ul>
+            </footer>
+          </article>
+
+        </div>
+      </main>
+
+      <aside class="sidebar col p-0 m-0">
+        <div class="plugin plugin-about">
+          <h2 class="plugin-label">このサイトについて</h2>
+          <div class="plugin-content">
+            しかし考か危険か希望に縛りつけですて、昨日ごろ風俗を申し上げているべき末が実保留の九月が買うないない。始めをもいやしくもしとしましないありたから、もしどうもあると影響はなるべくないたのだ。すなわちご使用に云いからはいたんたて、申とも、どうしても彼らか並べて出れられたらた思うられるましませとして、人は見えてみなた。
+          </div>
+        </div>
+        <div class="plugin plugin-textarea">
+          <h2 class="plugin-label">Label</h2>
+          <div class="plugin-content"></div>
+        </div>
+        <div class="plugin plugin-navigation">
+          <h2 class="plugin-label">最近の更新</h2>
+          <div class="plugin-content">
+            <ul>
+              <li>
+                <a href="http://localhost:8000/content-check">コンテンツチェック</a>
+              </li>
+              <li>
+                <a href="http://localhost:8000/text-check">テキストのチェック</a>
+              </li>
+              <li>
+                <a href="http://localhost:8000/test">test</a>
+              </li>
+              <li>
+                <a href="http://localhost:8000/html-sample">html sample</a>
+              </li>
+              <li>
+                <a href="http://localhost:8000/blog3">blog3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="plugin plugin-categories">
+          <h2 class="plugin-label">カテゴリー</h2>
+          <div class="plugin-content">
+            <ul>
+              <li>
+                <a href="http://localhost:8000/category/general">General (2)</a>
+              </li>
+              <li>
+                <a href="http://localhost:8000/category/music">Music (3)</a>
+              </li>
+              <li>
+                <a href="http://localhost:8000/category/videos">Videos (1)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="plugin plugin-tags">
+          <h2 class="plugin-label">タグ</h2>
+          <div class="plugin-content">
+            <ul>
+              <li>
+                <a href="http://localhost:8000/tag/tag1">tag1</a>
+              </li>
+              <li>
+                <a href="http://localhost:8000/tag/tag2">tag2</a>
+              </li>
+              <li>
+                <a href="http://localhost:8000/tag/tag3">tag3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="plugin plugin-static-pages">
+          <h2 class="plugin-label">メニュー</h2>
+          <div class="plugin-content">
+            <ul>
+              <li class="parent">
+                <a href="http://localhost:8000/about">about</a>
+              </li>
+              <li class="parent">
+                <a href="http://localhost:8000/menu1">menu1</a>
+              </li>
+              <li class="parent">
+                <a href="http://localhost:8000/menu2">menu2</a>
+              </li>
+              <li class="parent">
+                <a href="http://localhost:8000/contact">お問い合わせ</a>
+              </li>
+              <li class="subpage" style="margin-left: 10px">
+                <a href="http://localhost:8000/menu2/submenu">submenu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="plugin plugin-pages">
+          <h2 class="plugin-label">Links</h2>
+          <div class="plugin-content">
+            <ul>
+              <li>
+                <a href="https://www.bludit.com">Bludit</a>
+              </li>
+              <li>
+                <a href="https://pro.bludit.com">Bludit PRO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="plugin plugin-search">
+          <h2 class="plugin-label">Search</h2>
+          <div class="plugin-content">
+            <input type="text" id="jspluginSearchText" />
+          </div>
+        </div>
+        <script>
+          function pluginSearch() {
+            var text = document.getElementById("jspluginSearchText").value;
+            window.open('http://localhost:8000/' + 'search/' + text, '_self');
+            return false;
+          }
+
+          document.getElementById("jspluginSearchText").onkeypress = function (e) {
+            if (!e) e = window.event;
+            var keyCode = e.keyCode || e.which;
+            if (keyCode == '13') {
+              pluginSearch();
+              return false;
+            }
+          }
+        </script>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="container-fluid m-0 py-5 footer">
+    <div class="container-lg">
+      <p class="m-0 text-center">Copyright 2022 Jun Nogata | Powered by Bludit</p>
+    </div>
+  </footer>
+
+  <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
