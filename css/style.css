@@ -4,7 +4,7 @@
 
 :root {
   --base-color: #f7f7f7;
-  --text-color: #333333;
+  --text-color: #444444;
   --sub-text-color: #ffffff;
   /* Light Blue 600 */
   --main-color: #039be5;
@@ -236,6 +236,10 @@ div.wrapper {
   font-feature-settings: "palt";
   line-height: 1.8;
   margin-bottom: 1em;
+}
+
+.entry__content img {
+  width: 100%;
 }
 
 .entry__content blockquote {
