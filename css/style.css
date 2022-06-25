@@ -46,6 +46,10 @@ header.header {
   background-color: var(--main-color);
 }
 
+header.header a {
+  color: var(--sub-text-color);
+}
+
 .header__static_page_menu {
   background-color: var(--sub-color2);
 }
@@ -113,6 +117,7 @@ div.wrapper {
   padding: 1em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 
 /* ---------- page ---------- */
 
