@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import url("../font/bootstrap-icons/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
 
 :root {
   --base-color: #f7f7f7;
@@ -21,12 +21,14 @@
   --sns-hatena: #00a4de;
   --sns-line: #06c755;
   --sns-pocket: #ed4255;
+  --base-font-family: "Noto Sans JP", "Noto Sans CJK JP", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 body {
+  font-family: var(--base-font-family);
+  font-size: 1rem;
   color: var(--text-color);
   background-color: var(--base-color);
-  font-size: 1rem;
 }
 
 a {
@@ -64,19 +66,18 @@ header.header a {
 
 div.wrapper {
   background-color: #fff;
-  font-family: 'Noto Sans JP', sans-serif;
 }
 
 /* ---------- top ---------- */
 
 .card-header img {
   width: 100%;
-  height: 220px;
+  height: 13.75rem;
   object-fit: cover;
 }
 
 .card-categories {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   background-color: var(--category-color);
   padding: 2px 5px;
 }
@@ -95,7 +96,6 @@ div.wrapper {
 .card-footer .card-date::before,
 .card-footer .card-author::before {
   font-family: "bootstrap-icons";
-  font-weight: bold;
   font-size: 1em;
   vertical-align: -.125em;
   margin-right: 0.1rem;
@@ -123,7 +123,6 @@ div.wrapper {
 
 .entry__content {
   font-family: "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
-  font-size: 1rem;
   color: var(--text-color);
 }
 
@@ -133,7 +132,7 @@ div.wrapper {
 }
 
 .entry__meta {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 .entry__meta .entry__categories {
@@ -169,7 +168,6 @@ div.wrapper {
 .entry__content h5,
 .entry__content h6 {
   font-family: "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
-  font-size: 1rem;
   font-weight: bold;
   line-height: 1.5;
 }
@@ -394,16 +392,16 @@ div.wrapper {
 
 .entry__footer .entry__categories a::before {
   font-family: "bootstrap-icons";
+  content: "\F2C9";
   vertical-align: -.125em;
   margin-right: 2px;
-  content: "\F2C9";
 }
 
 .entry__footer .entry__tags a::before {
   font-family: "bootstrap-icons";
+  content: "\F5AF";
   vertical-align: -.125em;
   margin-right: 2px;
-  content: "\F5AF";
 }
 
 .entry__footer .entry__categories,
@@ -416,17 +414,16 @@ div.wrapper {
   background-color: var(--category-color);
 }
 
-
 /* ---------- sidebar ---------- */
 
 .plugin {
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
 }
 
 h2.plugin-label {
   color: #fff;
   background-color: var(--main-color);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -452,7 +449,6 @@ h2.plugin-label {
 
 .plugin-content a {
   color: var(--text-color);
-  text-decoration: none;
 }
 
 .plugin-navigation ul li,
@@ -467,11 +463,11 @@ h2.plugin-label {
 .plugin-categories ul li::after,
 .plugin-pages ul li::after,
 .plugin-static-pages ul li::after {
-  content: "\F231";
   font-family: "bootstrap-icons";
-  color: var(--main-color);
+  content: "\F231";
   font-weight: 900;
-  font-size: 1.2em;
+  font-size: 1.25em;
+  color: var(--main-color);
   vertical-align: -.125em;
   position: absolute;
   right: 0.75rem;
@@ -482,7 +478,7 @@ h2.plugin-label {
 .plugin-categories ul li:hover::after,
 .plugin-pages ul li:hover::after,
 .plugin-static-pages ul li:hover::after {
-  right: 0rem;
+  right: 0;
 }
 
 .plugin-search .plugin-content {
@@ -491,9 +487,9 @@ h2.plugin-label {
 
 .plugin-search .plugin-content input[type='text'] {
   width: 100%;
-  padding: 10px 15px;
-  font-size: 1.2rem;
-  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 1.25rem;
+  border-radius: 10px;
   border: 2px solid #ddd;
 }
 
