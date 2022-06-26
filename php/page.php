@@ -4,7 +4,7 @@
 	<!-- Load Bludit Plugins: Page Begin -->
 	<?php Theme::plugins('pageBegin'); ?>
 
-    <header class="entry__header">
+    <header class="entry__header mb-5">
       <p class="entry__meta">
         <span class="p-1 mr-5 entry__categories"><a href="#">カテゴリー</a></span>
         <time datetime="2022-06-22" class="fw-bold p-1 entry__date"><?php echo $page->date(); ?></time>
@@ -15,7 +15,7 @@
       <?php if ($page->coverImage()): ?>
       <figure>
         <picture>
-          <img src="<?php echo $page->coverImage(); ?>" class="w-100 h-25">
+          <img src="<?php echo $page->coverImage(); ?>" class="w-100 h-25 entry__cover">
         </picture>
       </figure>
       <?php endif ?>

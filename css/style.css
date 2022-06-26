@@ -150,7 +150,7 @@ div.wrapper {
 }
 
 .entry__meta .entry__categories::before {
-  content: "\F444";
+  content: "\F2C9";
 }
 
 .entry__meta .entry__author::before {
@@ -167,20 +167,21 @@ div.wrapper {
 .entry__content h4,
 .entry__content h5,
 .entry__content h6 {
-  font-family: "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
+  font-family: var(--base-font-family);
   font-weight: bold;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .entry__content h1 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
   font-weight: bolder;
 }
 
 .entry__content h2 {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   padding: 1.1rem 1rem;
   margin: 1rem 0;
   color: var(--sub-text-color);
@@ -211,15 +212,15 @@ div.wrapper {
 }
 
 .entry__content h5 {
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
   border-bottom: dotted 1px var(--main-color);
-  margin-top: 2em;
-  margin-bottom: 1em;
 }
 
 .entry__content h6 {
   font-size: 0.9rem;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
 }
 
 .entry__content h6::before {
@@ -239,7 +240,8 @@ div.wrapper {
 }
 
 .entry__content img {
-  width: 100%;
+  max-width: 100%;
+  margin: 1rem;
 }
 
 .entry__content blockquote {
