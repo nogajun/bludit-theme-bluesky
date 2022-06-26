@@ -7,19 +7,19 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <?php if ($staticContent) : ?>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <?php
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="<?php echo $site->url(); ?>">Home</a></li>
+            <?php
+            if ($staticContent) :
               foreach ($staticContent as $menu) :
                 if (!$menu->isChild()) :
                   echo '<li class="nav-item"><a class="nav-link active" href="' . $menu->permalink() . '">' . $menu->title() . '</a></li>';
                 endif;
               endforeach;
-              ?>
-            </ul>
-          </div>
-        <?php endif; ?>
+            endif; ?>
+          </ul>
+        </div>
       </div>
     </nav>
 
