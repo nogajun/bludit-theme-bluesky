@@ -28,13 +28,13 @@
       <h2 class="site__subtitle lead"><?php echo $site->slogan() ?></h2>
     </div>
 
-    <div class="header__static_page_menu d-flex align-items-end m-0 p-0 w-100">
+    <div class="header__static_page_menu align-items-end m-0 p-0 w-100">
       <nav class="container-lg my-0 p-0">
         <ul class="d-flex flex-wrap list-unstyled my-0">
           <?php
           foreach ($categories->db as $key => $fields) :
             if ($fields['list']) :
-              echo '<li class="text-center col-sm"><a href="' . DOMAIN_CATEGORIES . $key . '" class="d-inline-flex align-middle text-white text-uppercase p-3 fw-bold">' . $fields['name'] . '</a></li>';
+              echo '<li class="col"><a href="' . DOMAIN_CATEGORIES . $key . '" class="d-block fw-bold text-white text-center text-uppercase text-nowrap p-3 ">' . $fields['name'] . '</a></li>';
             endif;
           endforeach;
           ?>
