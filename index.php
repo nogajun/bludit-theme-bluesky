@@ -2,7 +2,7 @@
 <html lang="<?php echo Theme::lang() ?>">
 
 <head>
-<?php include(THEME_DIR_PHP.'head.php'); ?>
+	<?php include(THEME_DIR_PHP . 'head.php'); ?>
 </head>
 
 <body>
@@ -10,31 +10,39 @@
 	<?php Theme::plugins('siteBodyBegin'); ?>
 
 	<!-- header -->
-	<?php include(THEME_DIR_PHP.'header.php'); ?>
+	<?php include(THEME_DIR_PHP . 'header.php'); ?>
 
-  <!-- main -->
-  <div class="container-lg my-2 my-lg-4 py-3 shadow-sm wrapper">
-    <div class="row p-0 p-lg-4">
-      <main class="col-lg-8 px-2 main">
-			<?php
-				if ($WHERE_AM_I == 'page') {
-					include(THEME_DIR_PHP.'page.php');
-				} else {
-					include(THEME_DIR_PHP.'home.php');
+	<!-- main -->
+	<div class="container-lg my-2 my-lg-4 py-3 shadow-sm wrapper">
+		<div class="row p-0 p-lg-4">
+			<main class="col-lg-8 px-2 main">
+				<?php
+				switch ($WHERE_AM_I) {
+					case 'page':
+						include(THEME_DIR_PHP . 'page.php');
+						break;
+					case 'tag':
+						include(THEME_DIR_PHP . 'home.php');
+						break;
+					case 'category':
+						include(THEME_DIR_PHP . 'home.php');
+						break;
+					default:
+						include(THEME_DIR_PHP . 'home.php');
 				}
-			?>
-      </main>
+				?>
+			</main>
 
-      <!-- sidebar -->
-      <?php include(THEME_DIR_PHP.'sidebar.php'); ?>
+			<!-- sidebar -->
+			<?php include(THEME_DIR_PHP . 'sidebar.php'); ?>
 
-    </div>
-  </div>
+		</div>
+	</div>
 
-  <!-- footer -->
-  <?php include(THEME_DIR_PHP.'footer.php'); ?>
+	<!-- footer -->
+	<?php include(THEME_DIR_PHP . 'footer.php'); ?>
 
-  <?php echo Theme::js('js/bootstrap.bundle.min.js'); ?>
+	<?php echo Theme::js('js/bootstrap.bundle.min.js'); ?>
 
 	<!-- Load Bludit Plugins: Site Body End -->
 	<?php Theme::plugins('siteBodyEnd'); ?>
