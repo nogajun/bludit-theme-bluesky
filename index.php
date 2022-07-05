@@ -12,10 +12,10 @@
 	<!-- header -->
 	<?php include(THEME_DIR_PHP . 'header.php'); ?>
 
-	<!-- main -->
-	<div class="container-lg my-2 my-lg-4 py-3 shadow-sm wrapper">
-		<div class="row p-0 p-lg-4">
-			<main class="col-lg-8 px-2 main">
+	<div class="container-lg my-5 py-3 bg-white shadow-sm">
+		<div class="row">
+			<!-- main -->
+			<main class="col-lg-8">
 				<?php
 				switch ($WHERE_AM_I) {
 					case 'page':
@@ -34,8 +34,9 @@
 			</main>
 
 			<!-- sidebar -->
-			<?php include(THEME_DIR_PHP . 'sidebar.php'); ?>
-
+			<aside class="col sidebar">
+				<?php include(THEME_DIR_PHP . 'sidebar.php'); ?>
+			</aside>
 		</div>
 	</div>
 

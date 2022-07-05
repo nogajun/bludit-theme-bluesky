@@ -44,12 +44,7 @@ a:hover {
 /* ---------- header ---------- */
 
 header.header {
-  color: #fff;
   background-color: var(--main-color);
-}
-
-header.header a {
-  color: var(--sub-text-color);
 }
 
 .header__static_page_menu {
@@ -62,13 +57,9 @@ header.header a {
   transition: .5s ease;
 }
 
-/* ---------- container ---------- */
-
-div.wrapper {
-  background-color: #fff;
-}
-
 /* ---------- top ---------- */
+
+/*
 
 .card-header img {
   width: 100%;
@@ -118,7 +109,11 @@ div.wrapper {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+*/
+
 /* ---------- page ---------- */
+
+/*
 
 .entry__content {
   font-family: "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
@@ -418,6 +413,8 @@ div.wrapper {
 .entry__footer .entry__tags:hover {
   background-color: var(--category-color);
 }
+
+*/
 
 /* ---------- sidebar ---------- */
 
