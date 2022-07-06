@@ -16,7 +16,7 @@
         </header>
         <div class="card-body">
           <section>
-            <h2 class="card-title h4 fw-bold pb-2"><?php echo $page->title(); ?></h2>
+            <h2 class="card-title h5 fw-bold pb-2"><?php echo $page->title(); ?></h2>
             <?php
             if (mb_strlen($page->contentBreak()) > 96) {
               echo mb_substr($page->contentBreak(), 0, 97) . '...';
@@ -26,8 +26,8 @@
             ?>
           </section>
           <footer class="position-absolute bottom-0 end-0 card__footer">
-            <time datetime="<?php echo $page->date(); ?>" class="card__date"><?php echo $page->date(); ?></time>
-            <span class="card__author"><?php echo $page->user('nickname'); ?></span>
+            <time datetime="<?php echo $page->dateRaw('c') ?>" class="me-2 card__date"><?php echo $page->date(); ?></time>
+            <span class="me-2 card__author"><?php echo $page->user('nickname'); ?></span>
           </footer>
         </div>
       </article>
