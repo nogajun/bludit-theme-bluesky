@@ -129,14 +129,6 @@ header .card__category {
 
 /* ---------- page entry ---------- */
 
-/*
-
-.entry__content {
-  font-family: "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
-  color: var(--text-color);
-}
-
-
 .entry__meta {
   font-size: 0.75rem;
 }
@@ -265,10 +257,10 @@ header .card__category {
   content: "\F6B0";
   color: #999;
   background-color: #fff;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   position: absolute;
-  top: -0.6em;
+  top: -0.4em;
   left: -0.4em;
 }
 
@@ -303,7 +295,7 @@ header .card__category {
 
 .entry__content pre {
   font-family: Monaco, Consolas, Courier New, Courier, monospace, sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #fff;
   background-color: #333;
   margin: 2em 1em;
@@ -337,7 +329,6 @@ header .card__category {
   font-size: 0.9rem;
 }
 
-
 .entry__footer {
   font-size: 0.9rem;
 }
@@ -366,7 +357,6 @@ header .card__category {
   background-color: var(--category-color);
 }
 
-*/
 
 /* ---------- share button ---------- */
 
