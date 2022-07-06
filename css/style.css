@@ -74,13 +74,13 @@ a:hover article.card {
 }
 
 header .card__category {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   background-color: var(--category-color);
-  padding: 2px 5px;
+  padding: 3px 6px;
 }
 
 .card section {
-  min-height: 12.5rem;
+  min-height: 11rem;
 }
 
 .card-body h2 {
