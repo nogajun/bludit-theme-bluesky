@@ -2,7 +2,15 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="<?php echo Theme::siteUrl() ?>"><?php echo $site->title() ?></a>
+      <a class="navbar-brand" href="<?php echo Theme::siteUrl() ?>">
+        <?php
+        if ($site->logo()) :
+          echo '<img src="' . $site->logo() . '" alt="' . $site->title() . '" width="30">';
+        else :
+          echo $site->title();
+        endif;
+        ?>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -10,13 +18,13 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="<?php echo $site->url(); ?>">Home</a></li>
           <?php
-          if ($staticContent) {
-            foreach ($staticContent as $menu) {
-              if (!$menu->isChild()) {
+          if ($staticContent) :
+            foreach ($staticContent as $menu) :
+              if (!$menu->isChild()) :
                 echo '<li class="nav-item"><a class="nav-link" href="' . $menu->permalink() . '">' . $menu->title() . '</a></li>';
-              }
-            }
-          }
+              endif;
+            endforeach;
+          endif;
           ?>
         </ul>
       </div>

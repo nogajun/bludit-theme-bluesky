@@ -233,13 +233,15 @@ header .card__category {
 .entry__content p {
   text-align: justify;
   font-feature-settings: "palt";
+  text-justify: inter-character;
+  word-break: break-all;
+  overflow-wrap:break-word;
   line-height: 1.8;
   margin-bottom: 1em;
 }
 
 .entry__content img {
   max-width: 100%;
-  margin: 1rem;
 }
 
 .entry__content blockquote {

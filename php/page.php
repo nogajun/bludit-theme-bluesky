@@ -32,6 +32,8 @@
     <section class="entry__content">
       <!-- Full content -->
       <?php echo $page->content(); ?>
+      <!-- share button -->
+      <?php include(THEME_DIR_PHP . 'sharebutton.php'); ?>
     </section>
 
     <!-- entry footer -->
