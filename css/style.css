@@ -336,66 +336,6 @@ footer.card__footer {
   font-size: 0.9rem;
 }
 
-.sns_btn {
-  color: var(--sub-text-color);
-  font-size: 0.9rem;
-}
-
-.sns_btn__twitter::before,
-.sns_btn__facebook::before,
-.sns_btn__hatena::before,
-.sns_btn__line::before,
-.sns_btn__pocket::before {
-  font-family: "bootstrap-icons";
-  vertical-align: -.125em;
-  margin-right: 2px;
-}
-
-.sns_btn__twitter {
-  background-color: var(--sns-twitter);
-  transition: 0.3s;
-}
-
-.sns_btn li:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-.sns_btn__twitter::before {
-  content: "\F5EF";
-}
-
-.sns_btn__facebook {
-  background-color: var(--sns-facebook);
-}
-
-.sns_btn__facebook::before {
-  content: "\F344";
-}
-
-.sns_btn__hatena {
-  background-color: var(--sns-hatena);
-}
-
-.sns_btn__hatena::before {
-  content: "\F19C";
-}
-
-.sns_btn__line {
-  background-color: var(--sns-line);
-}
-
-.sns_btn__line::before {
-  content: "\F660";
-}
-
-.sns_btn__pocket {
-  background-color: var(--sns-pocket);
-}
-
-.sns_btn__pocket::before {
-  content: "\F19C";
-}
 
 .entry__footer {
   font-size: 0.9rem;
@@ -426,6 +366,76 @@ footer.card__footer {
 }
 
 */
+
+/* ---------- share button ---------- */
+
+.share-button {
+  color: var(--sub-text-color);
+  font-size: 0.875rem;
+}
+
+.share-button__twitter::before,
+.share-button__facebook::before,
+.share-button__hatena::before,
+.share-button__line::before,
+.share-button__pocket::before {
+  font-family: "bootstrap-icons";
+  vertical-align: -.125em;
+  margin-right: 3px;
+}
+
+.share-button li:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.share-button__twitter,
+.share-button__facebook,
+.share-button__hatena,
+.share-button__line,
+.share-button__pocket {
+  transition: 0.3s;
+}
+
+.share-button__twitter {
+  background-color: var(--sns-twitter);
+}
+
+.share-button__twitter::before {
+  content: "\F5EF";
+}
+
+.share-button__facebook {
+  background-color: var(--sns-facebook);
+}
+
+.share-button__facebook::before {
+  content: "\F344";
+}
+
+.share-button__hatena {
+  background-color: var(--sns-hatena);
+}
+
+.share-button__hatena::before {
+  content: "\F19C";
+}
+
+.share-button__line {
+  background-color: var(--sns-line);
+}
+
+.share-button__line::before {
+  content: "\F660";
+}
+
+.share-button__pocket {
+  background-color: var(--sns-pocket);
+}
+
+.share-button__pocket::before {
+  content: "\F19C";
+}
 
 /* ---------- sidebar ---------- */
 
