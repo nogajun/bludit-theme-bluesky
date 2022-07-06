@@ -95,8 +95,7 @@ header .card__category {
   white-space: nowrap;
 }
 
-.card-body p,
-.card__footer {
+.card-body p {
   font-size: 0.875rem;
 }
 
@@ -108,6 +107,7 @@ header .card__category {
 }
 
 .card__footer {
+  font-size: 0.75rem;
   margin: 0.5rem;
 }
 

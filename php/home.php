@@ -25,7 +25,7 @@
             }
             ?>
           </section>
-          <footer class="position-absolute bottom-0 end-0 card__footer">
+          <footer class="position-absolute bottom-0 end-0 text-muted card__footer">
             <time datetime="<?php echo $page->dateRaw('c') ?>" class="me-2 card__date"><?php echo $page->date(); ?></time>
             <span class="me-2 card__author"><?php echo $page->user('nickname'); ?></span>
           </footer>
