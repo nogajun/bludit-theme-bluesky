@@ -5,32 +5,33 @@
 <!-- Load Bludit Plugins: Page Begin -->
 <?php Theme::plugins('pageBegin'); ?>
 
-<div class="row">
+<div class="row row-cols-lg-2 g-3">
   <?php foreach ($content as $page) : ?>
     <!-- card -->
-    <article class="col-lg-6 border">
-      <header class="position-relative">
-        <img src="<?php echo ($page->coverImage() ? $page->coverImage() : Theme::src('img/noimg.png')) ?>" class="w-100">
-        <span class="fw-bold position-absolute bottom-0 end-0"><?php echo $page->category() ?></span>
-      </header>
-      <section class="">
-        <h2 class="h5 fw-bold"><?php echo $page->title(); ?></h2>
-        <p class="">
-          <?php
-          if (mb_strlen($page->contentBreak()) > 96) {
-            echo mb_substr($page->contentBreak(), 0, 97) . '...';
-          } else {
-            echo mb_substr($page->contentBreak(), 0, 100);
-          }
-          ?>
-        </p>
-        <p class="text-end"><?php echo $page->readMore() ? $L->get('Read more') : '' ?></p>
-      </section>
-      <footer class="text-end fw-bold">
-        <time datetime="<?php echo $page->date(); ?>" class="me-1"><?php echo $page->date(); ?></time>
-        <span class="me-1"><?php echo $page->user('nickname'); ?></span>
-      </footer>
-    </article>
+    <a class="text-decoration-none text-body" href="<?php echo $page->permalink(); ?>">
+      <article class="card col m-0 p-0 h-100">
+        <header class="position-relative">
+          <img src="<?php echo ($page->coverImage() ? $page->coverImage() : Theme::src('img/noimg.png')) ?>" class="card-img-top">
+          <span class="fw-bold position-absolute bottom-0 end-0 card__category"><?php echo $page->category() ?></span>
+        </header>
+        <div class="card-body">
+          <section>
+            <h2 class="card-title h4 fw-bold pb-2"><?php echo $page->title(); ?></h2>
+            <?php
+            if (mb_strlen($page->contentBreak()) > 96) {
+              echo mb_substr($page->contentBreak(), 0, 97) . '...';
+            } else {
+              echo mb_substr($page->contentBreak(), 0, 100);
+            }
+            ?>
+          </section>
+          <footer class="position-absolute bottom-0 end-0 card__footer">
+            <time datetime="<?php echo $page->date(); ?>" class="card__date"><?php echo $page->date(); ?></time>
+            <span class="card__author"><?php echo $page->user('nickname'); ?></span>
+          </footer>
+        </div>
+      </article>
+    </a>
   <?php endforeach; ?>
 </div>
 

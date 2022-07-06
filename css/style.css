@@ -57,59 +57,70 @@ header.header {
   transition: .5s ease;
 }
 
-/* ---------- top ---------- */
+/* ---------- top page ---------- */
 
-/*
-
-.card-header img {
+.card header img {
   width: 100%;
   max-height: 12.5rem;
   object-fit: cover;
 }
 
-.card-categories {
+a article.card {
+  transition: all .2s ease-in-out;
+}
+
+a:hover article.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header .card__category {
   font-size: 0.75rem;
   background-color: var(--category-color);
   padding: 2px 5px;
 }
 
-.card-text,
-.card-footer {
-  font-size: 0.8rem;
+.card section {
+  min-height: 12.5rem;
 }
 
+.card-body h2 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-body p,
+.card__footer {
+  font-size: 0.875rem;
+}
+
+.card-body p,
 .card-text {
   color: #666;
   text-align: justify;
   font-feature-settings: "palt";
 }
 
-.card-footer .card-date::before,
-.card-footer .card-author::before {
+footer.card__footer {
+  margin: 0.5rem;
+}
+
+.card__footer .card__date::before,
+.card__footer .card__author::before {
   font-family: "bootstrap-icons";
   font-size: 1em;
   vertical-align: -.125em;
   margin-right: 0.1rem;
 }
 
-.card-footer .card-date::before {
+.card__footer .card__date::before {
   content: "\F293";
 }
 
-.card-footer .card-author::before {
+.card__footer .card__author::before {
   content: "\F4CA";
 }
-
-.card-article article {
-  transition: all .3s ease-in-out;
-}
-
-.card-article:hover article {
-  padding: 1em;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-*/
 
 /* ---------- page ---------- */
 
