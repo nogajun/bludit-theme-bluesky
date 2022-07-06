@@ -15,7 +15,7 @@
 	<div class="container-lg my-5 py-3 px-lg-4 bg-white shadow-sm">
 		<div class="row">
 			<!-- main -->
-			<main class="col-lg-8">
+			<main class="col-lg-8 my-2">
 				<?php
 				switch ($WHERE_AM_I) {
 					case 'page':
@@ -34,7 +34,7 @@
 			</main>
 
 			<!-- sidebar -->
-			<aside class="col sidebar">
+			<aside class="col my-2 sidebar">
 				<?php include(THEME_DIR_PHP . 'sidebar.php'); ?>
 			</aside>
 		</div>

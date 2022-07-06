@@ -8,11 +8,11 @@
       <p class="entry__meta">
         <!-- category -->
         <?php if ($page->category()) : ?>
-          <span class="entry__categories">
+          <span class="p-1 me-1 entry__categories">
             <a href="<?php echo DOMAIN_CATEGORIES . $page->categoryKey() ?>"><?php echo $page->category() ?></a>
           </span>
         <?php endif ?>
-        <time datetime="<?php echo $page->dateRaw('c') ?>" class="entry__date"><?php echo $page->date(); ?></time>
+        <time datetime="<?php echo $page->dateRaw('c') ?>" class="p-1 me-1 entry__date"><?php echo $page->date(); ?></time>
         <span class="p-1 entry__author"><?php echo $page->user('nickname'); ?></span>
       </p>
       <h1 class="h2 fw-bold entry__title"><?php echo $page->title(); ?></h1>
