@@ -57,6 +57,11 @@ header.header {
   transition: .5s ease;
 }
 
+.navbar-toggler-icon {
+  width: 1em !important;
+  height: 1em !important;
+}
+
 /* ---------- top page ---------- */
 
 .card header img {
@@ -102,7 +107,7 @@ header .card__category {
   font-feature-settings: "palt";
 }
 
-footer.card__footer {
+.card__footer {
   margin: 0.5rem;
 }
 
@@ -122,7 +127,7 @@ footer.card__footer {
   content: "\F4CA";
 }
 
-/* ---------- page ---------- */
+/* ---------- page entry ---------- */
 
 /*
 
@@ -131,10 +136,6 @@ footer.card__footer {
   color: var(--text-color);
 }
 
-.navbar-toggler-icon {
-  width: 1em !important;
-  height: 1em !important;
-}
 
 .entry__meta {
   font-size: 0.75rem;
