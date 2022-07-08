@@ -159,6 +159,12 @@ header .card__category {
   content: "\F293";
 }
 
+.entry__cover {
+  width: 100%;
+  max-height: 31.25rem;
+  object-fit: cover;
+}
+
 .entry__content h1,
 .entry__content h2,
 .entry__content h3,

@@ -12,7 +12,7 @@
 	<!-- header -->
 	<?php include(THEME_DIR_PHP . 'header.php'); ?>
 
-	<div class="container-lg my-5 py-3 px-lg-4 bg-white shadow-sm">
+	<div class="container-lg my-4 py-3 px-lg-4 bg-white shadow-sm">
 		<div class="row">
 			<!-- main -->
 			<main class="col-lg-8 my-2">

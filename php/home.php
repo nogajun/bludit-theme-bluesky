@@ -17,13 +17,15 @@
         <div class="card-body">
           <section>
             <h2 class="card-title h5 fw-bold pb-2"><?php echo $page->title(); ?></h2>
+            <p class="card-text">
             <?php
-            if (mb_strlen($page->contentBreak()) > 96) {
-              echo mb_substr($page->contentBreak(), 0, 97) . '...';
+            if (mb_strlen(strip_tags($page->contentBreak())) > 96) {
+              echo mb_substr(strip_tags($page->contentBreak()), 0, 97) . '...';
             } else {
-              echo mb_substr($page->contentBreak(), 0, 100);
+              echo mb_substr(strip_tags($page->contentBreak()), 0, 100);
             }
             ?>
+            </p>
           </section>
           <footer class="position-absolute bottom-0 end-0 text-muted card__footer">
             <time datetime="<?php echo $page->dateRaw('c') ?>" class="me-2 card__date"><?php echo $page->date(); ?></time>
