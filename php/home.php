@@ -12,7 +12,7 @@
       <article class="card col m-0 p-0 h-100">
         <header class="position-relative">
           <img src="<?php echo ($page->coverImage() ? $page->coverImage() : Theme::src('img/noimg.png')) ?>" class="card-img-top">
-          <span class="position-absolute bottom-0 end-0 card__category"><?php echo $page->category() ?></span>
+          <span class="position-absolute top-0 end-0 card__category"><?php echo $page->category() ?></span>
         </header>
         <div class="card-body">
           <section>

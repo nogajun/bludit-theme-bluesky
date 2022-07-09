@@ -248,6 +248,7 @@ header .card__category {
 
 .entry__content img {
   max-width: 100%;
+  margin: 0.5rem;
 }
 
 .entry__content blockquote {

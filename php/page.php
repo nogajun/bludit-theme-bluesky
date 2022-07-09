@@ -5,7 +5,7 @@
 
     <!-- entry header -->
     <header class="entry__header">
-      <p class="entry__meta">
+      <p class="entry__meta mb-2">
         <!-- category -->
         <?php if ($page->category()) : ?>
           <span class="p-1 me-1 entry__categories">
