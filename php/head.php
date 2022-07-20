@@ -5,7 +5,7 @@
 <?php echo Theme::metaTags('description'); ?>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <?php echo Theme::css('css/bootstrap.min.css'); ?>
 <?php echo Theme::css('css/style.css'); ?>
 <?php echo Theme::favicon('img/favicon.ico'); ?>
