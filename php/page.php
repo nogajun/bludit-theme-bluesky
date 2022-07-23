@@ -46,10 +46,10 @@
           </li>
         <?php endif ?>
         <!-- tags -->
-        <?php if (!empty($page->tags(true))) : ?>
+        <?php if ($page->tags()) : ?>
           <?php foreach ($page->tags(true) as $tagKey => $tagName) : ?>
             <li class="border rounded p-1 mx-1 entry__tags">
-              <a href="<? echo DOMAIN_TAGS . $tagKey; ?>"><?php echo $tagName; ?></a>
+              <a href="<?php echo DOMAIN_TAGS . $tagKey; ?>"><?php echo $tagName; ?></a>
             </li>
           <?php endforeach; ?>
         <?php endif; ?>
