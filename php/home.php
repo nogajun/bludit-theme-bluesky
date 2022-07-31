@@ -11,7 +11,7 @@
     <div class="col mb-2 mb-md-3">
       <article class="card">
         <header class="position-relative">
-          <img src="<?php echo ($page->coverImage() ? $page->coverImage() : Theme::src('img/noimg.webp')) ?>" class="card-img-top" width="416px" height="234px">
+          <img src="<?php echo ($page->coverImage() ? $page->coverImage() : Theme::src('img/noimg.webp')) ?>" class="img-fluid card-img-top" width="416px" height="234px">
           <span class="position-absolute top-0 end-0 rounded-1  card__category"><?php echo $page->category() ?></span>
         </header>
         <div class="card-body">

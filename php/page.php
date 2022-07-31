@@ -1,4 +1,4 @@
-<div class="row row-cols-1">
+<div class="row row-cols-1 my-4">
   <div class="col">
 
     <article class="entry">
@@ -6,15 +6,15 @@
       <?php Theme::plugins('pageBegin'); ?>
       <!-- entry header -->
       <header class="entry__header">
-        <p class="entry__meta mb-2">
+        <p class="entry__meta">
           <!-- category -->
           <?php if ($page->category()) : ?>
-            <span class="p-1 me-1 entry__categories">
+            <span class="me-1 entry__categories">
               <a href="<?php echo DOMAIN_CATEGORIES . $page->categoryKey() ?>"><?php echo $page->category() ?></a>
             </span>
           <?php endif ?>
           <time datetime="<?php echo $page->dateRaw('c') ?>" class="p-1 me-1 entry__date"><?php echo $page->date(); ?></time>
-          <span class="p-1 entry__author"><?php echo $page->user('nickname'); ?></span>
+          <span class="entry__author"><?php echo $page->user('nickname'); ?></span>
         </p>
         <h1 class="h2 fw-bold entry__title"><?php echo $page->title(); ?></h1>
         <!-- Cover image -->

@@ -32,7 +32,7 @@
   </nav>
 
   <!-- title -->
-  <div class="py-5 text-white text-center">
+  <div class="py-3 py-lg-5 text-white text-center">
     <h1 class="display-5 fw-bolder">
       <a href="<?php echo Theme::siteUrl() ?>" class="text-decoration-none text-white"><?php echo $site->title() ?></a>
     </h1>
@@ -40,18 +40,18 @@
   </div>
 
   <!-- static page menu -->
-  <div class="align-items-end w-100 header__static_page_menu">
-    <nav class="container-lg my-0 p-0">
-      <ul class="d-flex flex-wrap list-unstyled my-0">
+  <aside class="text-center text-uppercase fw-bold header__static_page_menu">
+    <nav class="container-lg">
+      <ul class="row justify-content-around list-unstyled">
         <?php
         foreach ($categories->db as $key => $fields) {
           if ($fields['list']) {
-            echo '<li class="col"><a href="' . DOMAIN_CATEGORIES . $key . '" class="d-block fw-bold text-white text-center text-uppercase text-nowrap p-3 ">' . $fields['name'] . '</a></li>';
+            echo '<li class="col py-1 py-md-3"><a href="' . DOMAIN_CATEGORIES . $key . '" class="d-block text-white text-nowrap">' . $fields['name'] . '</a></li>';
           }
         }
         ?>
       </ul>
     </nav>
-  </div>
+  </aside>
 
 </header>
