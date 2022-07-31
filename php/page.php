@@ -1,4 +1,4 @@
-<div class="row row-cols-1 my-4">
+<div class="row row-cols-1 my-1 my-md-0 mx-md-2">
   <div class="col">
 
     <article class="entry">
@@ -16,7 +16,7 @@
           <time datetime="<?php echo $page->dateRaw('c') ?>" class="p-1 me-1 entry__date"><?php echo $page->date(); ?></time>
           <span class="entry__author"><?php echo $page->user('nickname'); ?></span>
         </p>
-        <h1 class="h2 fw-bold entry__title"><?php echo $page->title(); ?></h1>
+        <h1 class="h3 fw-bold entry__title"><?php echo $page->title(); ?></h1>
         <!-- Cover image -->
         <?php if ($page->coverImage()) : ?>
           <figure>
