@@ -12,10 +12,10 @@
 	<!-- header -->
 	<?php include(THEME_DIR_PHP . 'header.php'); ?>
 
-	<div class="container-lg my-4 py-3 px-lg-4 bg-white shadow-sm">
-		<div class="row">
+	<div class="container-lg py-2 py-md-3 my-xl-3 bg-white shadow-sm">
+		<div class="row row-cols-1 row-cols-xl-2">
 			<!-- main -->
-			<main class="col-lg-8 my-2">
+			<main class="col col-xl-8">
 				<?php
 				switch ($WHERE_AM_I) {
 					case 'page':
@@ -34,7 +34,7 @@
 			</main>
 
 			<!-- sidebar -->
-			<aside class="col my-2 sidebar">
+			<aside class="col col-xl-4 sidebar">
 				<?php include(THEME_DIR_PHP . 'sidebar.php'); ?>
 			</aside>
 		</div>
@@ -43,7 +43,7 @@
 	<!-- footer -->
 	<?php include(THEME_DIR_PHP . 'footer.php'); ?>
 
-	<?php echo Theme::js('js/bootstrap.bundle.min.js'); ?>
+  <script defer src="<?php echo HTML_PATH_THEME_JS . 'bootstrap.min.js' ?>"></script>
 
 	<!-- Load Bludit Plugins: Site Body End -->
 	<?php Theme::plugins('siteBodyEnd'); ?>
