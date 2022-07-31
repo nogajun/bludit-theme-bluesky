@@ -12,7 +12,7 @@
 	<!-- header -->
 	<?php include(THEME_DIR_PHP . 'header.php'); ?>
 
-	<div class="container-lg px-md-3 py-2 py-md-4 my-xl-4 bg-white shadow-sm">
+	<div class="container-lg px-md-3 py-3 py-lg-4 my-0 my-xl-4 bg-white shadow-sm">
 		<div class="row row-cols-1 row-cols-xl-2">
 			<!-- main -->
 			<main class="col col-xl-8">

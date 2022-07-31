@@ -42,11 +42,11 @@
   <!-- static page menu -->
   <aside class="text-center text-uppercase fw-bold header__static_page_menu">
     <nav class="container-lg">
-      <ul class="row justify-content-around list-unstyled">
+      <ul class="nav nav-justified">
         <?php
         foreach ($categories->db as $key => $fields) {
           if ($fields['list']) {
-            echo '<li class="col py-1 py-md-3"><a href="' . DOMAIN_CATEGORIES . $key . '" class="d-block text-white text-nowrap">' . $fields['name'] . '</a></li>';
+            echo '<li class="nav-item py-1 px-3 py-md-3"><a href="' . DOMAIN_CATEGORIES . $key . '" class="d-block text-white text-nowrap">' . $fields['name'] . '</a></li>';
           }
         }
         ?>

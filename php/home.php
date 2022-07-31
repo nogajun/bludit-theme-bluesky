@@ -1,14 +1,14 @@
 <?php if (empty($content)) {
-  $language->p('No pages found');
+  $language->p('Page not found');
 } ?>
 
 <!-- Load Bludit Plugins: Page Begin -->
 <?php Theme::plugins('pageBegin'); ?>
 
-<div class="row row-cols-1 row-cols-md-2 gx-0 gx-md-2">
+<div class="row row-cols-1 row-cols-md-2 gx-0 gx-md-3">
   <?php foreach ($content as $page) : ?>
     <!-- card -->
-    <div class="col mb-2 mb-md-3">
+    <div class="col mb-2 mb-md-4">
       <article class="card">
         <header class="position-relative">
           <img src="<?php echo ($page->coverImage() ? $page->coverImage() : Theme::src('img/noimg.webp')) ?>" class="img-fluid card-img-top" width="416px" height="234px">
