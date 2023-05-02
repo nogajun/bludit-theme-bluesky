@@ -62,18 +62,18 @@ header.header {
 
 /* ---------- top page ---------- */
 
+.card {
+  transition: all .2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .card header img {
   width: 100%;
   max-height: 12.5rem;
   object-fit: cover;
-}
-
-a article.card {
-  transition: all .2s ease-in-out;
-}
-
-a:hover article.card {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header .card__category {
@@ -247,6 +247,18 @@ p.entry__meta {
   overflow-wrap:break-word;
   line-height: 1.8;
   margin-bottom: 1em;
+}
+
+.entry__content strong {
+  background: linear-gradient(transparent 60%, #e6ee9c 0%);
+}
+
+.entry__content strong.teal {
+  background: linear-gradient(transparent 60%, #b2dfdb 0%);
+}
+
+.entry__content strong.pink {
+  background: linear-gradient(transparent 60%, #f8bbd0 0%);
 }
 
 .entry__content img {
