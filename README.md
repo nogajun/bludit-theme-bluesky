@@ -1,6 +1,11 @@
+> [!CAUTION]
+> The author is no longer using Bludit and will archive this theme. If you want to change it, please fork it.
+>
+> 作者がBluditを使わなくなったので、このテーマをアーカイブ化します。変更したい人はフォークしてください。
+
 # Bluesky theme for bludit CMS
 
-Blusky is [bludit CMS](https://www.bludit.com/) theme.
+Bluesky is a theme for [bludit CMS](https://www.bludit.com/), inspired by Hatena blog theme [ZENO-TEAL](https://blog.hatena.ne.jp/-/store/theme/10328749687225937733) and WordPress theme [Cocoon](https://wp-cocoon.com/).
 
 ## Compatible
 
